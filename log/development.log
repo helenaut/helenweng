@@ -1505,3 +1505,57 @@ Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.2ms)
 
 Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 06:22:41 -0700 2012
 Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 06:55:59 -0700 2012
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 19ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 06:55:59 -0700 2012
+Served asset /style.css - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 06:56:02 -0700 2012
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 06:56:02 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 06:56:02 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (5.7ms)
+Completed 200 OK in 42ms (Views: 11.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 06:56:03 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 07:03:46 -0700 2012
+Connecting to database specified by database.yml
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (39.4ms)
+Completed 200 OK in 86ms (Views: 60.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 07:03:47 -0700 2012
+Served asset /style.css - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 07:03:49 -0700 2012
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 07:03:49 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
