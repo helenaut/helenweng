@@ -1,18 +1,17 @@
 Homepage::Application.routes.draw do
-  resources :projects
 
   get "projects/index"
 
   get "home/index"
 
-  resources :projects 
+  #resources :projects 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
-
+  match 'projects' => 'projects#index'
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
