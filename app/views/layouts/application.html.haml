@@ -1,0 +1,35 @@
+!!!5
+%html
+  %head
+    %title Helen Weng
+    = stylesheet_link_tag 'style'
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Norican'
+    = csrf_meta_tags
+  %body
+    #container
+      #header
+        %h1
+          Helen Weng
+      #navigation.box
+        .navitem
+          =link_to_unless_current 'About Me', root_path
+        .navitem
+          =link_to_unless_current 'Projects', projects_path
+        .navitem
+          =link_to "LinkedIn", "http://www.linkedin.com/in/helenweng", :target=>"_blank"
+        .navitem
+          =link_to "Twitter", "https://twitter.com/#!/helenaut", :target=>"_blank"
+        .navitem
+          =link_to "GitHub", "https://github.com/helenaut", :target=>"_blank"
+        .navitem.last
+          =link_to "Resume", "http://google.com", :target=>"_blank"
+      #flash
+        - [:notice, :error, :success].each do |key|
+          - unless flash[key].blank?
+            %p{ :class => "flash #{key}" }= flash[key] 
+      #content
+        =yield
+      #footer.box
+        %p
+          contact me at 
+          =link_to "helen@helenweng.com", "MAILTO:helen@helenweng.com"  

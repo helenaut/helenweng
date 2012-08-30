@@ -1,0 +1,27 @@
+%p
+  Always under construction! Also check out my 
+  = link_to 'Github', 'http://github.com/helenaut'
+- @projects.each do |project|
+  .project
+    .image
+      %img{:src => "images/projects/" + project.img}
+    .content
+      %h2
+        #{project.title}
+      %p
+        #{project.description}
+        %br/
+        -if project.link1.strip != ""
+          = link_to project.link1 + " ", project.link1url
+          | 
+        -if project.link2.strip != ""
+          = link_to project.link2 + " ", project.link2url
+          | 
+        -if project.link3.strip != ""
+          = link_to project.link3 + " ", project.link3url
+          | 
+        -if project.link4.strip != ""
+          = link_to project.link4 + " ", project.link4url
+          | 
+        #{project.date}
+  .separator

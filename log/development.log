@@ -1,0 +1,1507 @@
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Wed Aug 29 22:24:21 -0700 2012
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (4ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Thu Aug 30 03:25:22 -0700 2012
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Thu Aug 30 03:39:22 -0700 2012
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 03:39:24 -0700 2012
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 7ms
+
+ActionView::MissingTemplate (Missing template home/index, application/index with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :coffee, :builder]}. Searched in:
+  * "/Users/helen/Code/homepage/app/views"
+):
+  actionpack (3.2.8) lib/action_view/path_set.rb:58:in `find'
+  actionpack (3.2.8) lib/action_view/lookup_context.rb:109:in `find_template'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:3:in `__send__'
+  actionpack (3.2.8) lib/action_view/renderer/abstract_renderer.rb:3:in `find_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:34:in `determine_template'
+  actionpack (3.2.8) lib/action_view/renderer/template_renderer.rb:10:in `render'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.8) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.8) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.8) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+  activesupport (3.2.8) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:18:in `process_action'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:414:in `_run__1002314300__process_action__1238887860__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.8) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.8) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.8) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.8) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.8) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.8) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.8) lib/action_controller/metal.rb:246:in `action'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.8) lib/action_dispatch/routing/route_set.rb:600:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.1) lib/rack/etag.rb:23:in `call'
+  rack (1.4.1) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:205:in `context'
+  rack (1.4.1) lib/rack/session/abstract/id.rb:200:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/cookies.rb:339:in `call'
+  activerecord (3.2.8) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `_run__780397630__call__4__callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `send'
+  activesupport (3.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 03:40:24 -0700 2012
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (1.0ms)
+Compiled home.css  (4ms)  (pid 82477)
+Compiled application.css  (11ms)  (pid 82477)
+Compiled jquery.js  (4ms)  (pid 82477)
+Compiled jquery_ujs.js  (1ms)  (pid 82477)
+Compiled home.js  (70ms)  (pid 82477)
+Compiled application.js  (140ms)  (pid 82477)
+Completed 200 OK in 212ms (Views: 211.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Thu Aug 30 03:40:24 -0700 2012
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Thu Aug 30 03:40:24 -0700 2012
+Served asset /home.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Thu Aug 30 03:40:24 -0700 2012
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Thu Aug 30 03:40:24 -0700 2012
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Thu Aug 30 03:40:24 -0700 2012
+Served asset /home.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Thu Aug 30 03:40:24 -0700 2012
+Served asset /application.js - 200 OK (5ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 03:46:00 -0700 2012
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Thu Aug 30 03:46:01 -0700 2012
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Thu Aug 30 03:46:01 -0700 2012
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Thu Aug 30 03:46:01 -0700 2012
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Thu Aug 30 03:46:01 -0700 2012
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Thu Aug 30 03:46:01 -0700 2012
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Thu Aug 30 03:46:01 -0700 2012
+Served asset /application.js - 304 Not Modified (48ms)
+
+
+Started GET "/images/profile.jpg" for 127.0.0.1 at Thu Aug 30 03:46:01 -0700 2012
+
+ActionController::RoutingError (No route matches [GET] "/images/profile.jpg"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 03:55:51 -0700 2012
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (undefined local variable or method `projects_path' for #<#<Class:0x1287894d8>:0x128786080>):
+    14:         .navitem
+    15:           =link_to_unless_current 'About Me', root_path
+    16:         .navitem
+    17:           =link_to_unless_current 'Projects', projects_path
+    18:         .navitem
+    19:           =link_to "LinkedIn", "http://www.linkedin.com/in/helenweng", :target=>"_blank"
+    20:         .navitem
+  app/views/layouts/application.html.haml:17:in `_app_views_layouts_application_html_haml___1679426246_2486949980'
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.7ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 04:05:14 -0700 2012
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at Thu Aug 30 04:05:14 -0700 2012
+Served asset /style.css - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/style.css"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/images/profile.jpg" for 127.0.0.1 at Thu Aug 30 04:05:14 -0700 2012
+
+ActionController::RoutingError (No route matches [GET] "/images/profile.jpg"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 04:05:27 -0700 2012
+Processing by ProjectsController#index as HTML
+Completed 500 Internal Server Error in 15ms
+
+ActiveRecord::StatementInvalid (Could not find table 'projects'):
+  app/controllers/projects_controller.rb:5:in `index'
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.1ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 04:05:27 -0700 2012
+Processing by ProjectsController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'projects'):
+  app/controllers/projects_controller.rb:5:in `index'
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.8ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (0.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateProjects (20120830110441)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "projects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" varchar(255), "img" varchar(255), "date" varchar(255), "link1" varchar(255), "link1url" varchar(255), "link2" varchar(255), "link2url" varchar(255), "link3" varchar(255), "link3url" varchar(255), "link4" varchar(255), "link4url" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120830110441')
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("projects")
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 04:10:10 -0700 2012
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 2 spaces.):
+    21:           =link_to "Twitter", "https://twitter.com/#!/helenaut", :target=>"_blank"
+    22:         .navitem
+    23:           =link_to "GitHub", "https://github.com/helenaut", :target=>"_blank"
+    24: 	.navitem
+    25:           =link_to "Resume", "http://google.com", :target=>"_blank"
+    26:       #flash
+    27:         - [:notice, :error, :success].each do |key|
+  app/views/layouts/application.html.haml:24
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 04:11:05 -0700 2012
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (0.1ms)
+Compiled style.css  (24ms)  (pid 83471)
+Completed 200 OK in 89ms (Views: 88.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:11:05 -0700 2012
+Served asset /style.css - 200 OK (2ms)
+
+
+Started GET "/images/profile.jpg" for 127.0.0.1 at Thu Aug 30 04:11:05 -0700 2012
+
+ActionController::RoutingError (No route matches [GET] "/images/profile.jpg"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 04:11:39 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (44.5ms)
+Completed 200 OK in 59ms (Views: 48.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:11:39 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at Thu Aug 30 04:11:46 -0700 2012
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.haml (19.5ms)
+  Rendered projects/new.html.haml within layouts/application (25.4ms)
+Completed 200 OK in 37ms (Views: 28.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:11:46 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 04:13:33 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.haml within layouts/application (0.4ms)
+Compiled style.css  (24ms)  (pid 83471)
+Completed 200 OK in 76ms (Views: 75.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:13:33 -0700 2012
+Served asset /style.css - 200 OK (3ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 04:14:14 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (0.6ms)
+Compiled style.css  (67ms)  (pid 83471)
+Completed 200 OK in 82ms (Views: 80.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:14:14 -0700 2012
+Served asset /style.css - 200 OK (1ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 04:15:43 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.haml within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 84ms
+
+ActionView::Template::Error (Invalid CSS after "}": expected "}", was ""
+  (in /Users/helen/Code/homepage/app/assets/stylesheets/style.scss)):
+    2: %html
+    3:   %head
+    4:     %title Helen Weng
+    5:     = stylesheet_link_tag 'style'
+    6:     = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Norican'
+    7:     = csrf_meta_tags
+    8:   %body
+  app/assets/stylesheets/style.scss:97
+  app/views/layouts/application.html.haml:5:in `_app_views_layouts_application_html_haml__657667992_2540874980'
+  app/controllers/projects_controller.rb:7:in `index'
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 04:16:13 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (0.5ms)
+Compiled style.css  (69ms)  (pid 83471)
+Completed 200 OK in 84ms (Views: 82.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:16:13 -0700 2012
+Served asset /style.css - 200 OK (1ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 04:16:50 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.haml within layouts/application (0.8ms)
+Compiled style.css  (71ms)  (pid 83471)
+Completed 200 OK in 88ms (Views: 85.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:16:50 -0700 2012
+Served asset /style.css - 200 OK (1ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 04:18:33 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:18:33 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 04:18:35 -0700 2012
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:18:35 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 04:21:41 -0700 2012
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:21:41 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 04:22:28 -0700 2012
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 49ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:22:28 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 04:24:01 -0700 2012
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (1.8ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:24:01 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 04:24:44 -0700 2012
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (2.5ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:24:44 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 04:25:21 -0700 2012
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:25:21 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 04:26:07 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:26:07 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at Thu Aug 30 04:26:14 -0700 2012
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.haml (5.9ms)
+  Rendered projects/new.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:26:14 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 04:27:11 -0700 2012
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:27:11 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 04:27:25 -0700 2012
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 6ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:27:25 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 04:28:17 -0700 2012
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (2.3ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:28:17 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 04:28:43 -0700 2012
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:28:43 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 04:29:01 -0700 2012
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:29:01 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 04:29:59 -0700 2012
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:29:59 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 04:30:20 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:30:20 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at Thu Aug 30 04:30:40 -0700 2012
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.haml (45.6ms)
+  Rendered projects/new.html.haml within layouts/application (46.6ms)
+Completed 200 OK in 50ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:30:40 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started POST "/projects" for 127.0.0.1 at Thu Aug 30 04:34:58 -0700 2012
+Processing by ProjectsController#create as HTML
+  Parameters: {"commit"=>"Save", "project"=>{"link3url"=>"", "link4url"=>"", "title"=>"FuNutrition", "img"=>"funutrition.jpg", "description"=>"Being a vegetarian myself, I decided to design an informational website geared toward educating young children living a vegetarian lifestyle about the various nutrients that they eat in a fun and personal way. This website was designed using minimal PHP, HTML, and CSS. All artwork was drawn and vectored by yours truly. Admittedly the technology used is a little dated, but it was fun putting it all together and getting back into webdesigning again. :) ", "link1url"=>"http://food.helened.net/", "date"=>"April 2011", "link2url"=>"", "link1"=>"See It Live", "link2"=>"", "link3"=>"", "link4"=>""}, "authenticity_token"=>"W67atvXgSJ5/sIkaAAhb2V2+HJTrBgB+YpcgzxaJkWA=", "utf8"=>"✓"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.2ms)[0m  [1mINSERT INTO "projects" ("created_at", "date", "description", "img", "link1", "link1url", "link2", "link2url", "link3", "link3url", "link4", "link4url", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 30 Aug 2012 11:34:58 UTC +00:00], ["date", "April 2011"], ["description", "Being a vegetarian myself, I decided to design an informational website geared toward educating young children living a vegetarian lifestyle about the various nutrients that they eat in a fun and personal way. This website was designed using minimal PHP, HTML, and CSS. All artwork was drawn and vectored by yours truly. Admittedly the technology used is a little dated, but it was fun putting it all together and getting back into webdesigning again. :) "], ["img", "funutrition.jpg"], ["link1", "See It Live"], ["link1url", "http://food.helened.net/"], ["link2", ""], ["link2url", ""], ["link3", ""], ["link3url", ""], ["link4", ""], ["link4url", ""], ["title", "FuNutrition"], ["updated_at", Thu, 30 Aug 2012 11:34:58 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/projects/1
+Completed 302 Found in 10ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at Thu Aug 30 04:34:58 -0700 2012
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered projects/show.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:34:58 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 04:35:07 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:35:07 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 04:54:58 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (Inconsistent indentation: 9 spaces were used for indentation, but the rest of the document was indented using 2 spaces.):
+    11:         project.description
+    12:         %br/
+    13:         -if project.link1.strip == ""
+    14:          = link_to project.link1 + " ", project.link1url
+    15:          | 
+    16:         -if project.link2.strip == ""
+    17:          = link_to project.link2 + " ", project.link2url
+  app/views/projects/index.html.haml:14
+  app/controllers/projects_controller.rb:7:in `index'
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.6ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 04:55:39 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" 
+ERROR: compiling _app_views_projects_index_html_haml___1078994251_2538972720 RAISED compile error
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:6: syntax error, unexpected ';', expecting ')'
+...ages/projects/" + project.img; :width => "400px;")}>\n  </di...
+                              ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:6: syntax error, unexpected ')', expecting '}'
+...oject.img; :width => "400px;")}>\n  </div>\n  <div class='co...
+                              ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:6: unknown regexp option - h
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:6: syntax error, unexpected tINTEGER, expecting '}'
+...n      project.title\n    </h2>\n    <p>\n      project.desc...
+                              ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:6: syntax error, unexpected $undefined
+...ect.title\n    </h2>\n    <p>\n      project.description\n  ...
+                              ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:6: syntax error, unexpected $undefined, expecting '}'
+...p>\n      project.description\n      <br>\n", 1, false);
+                              ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:6: syntax error, unexpected $undefined
+...oject.description\n      <br>\n", 1, false);
+                              ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:15: syntax error, unexpected ')', expecting '}'
+));}\n      |\n", 0, false);end
+ ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:18: syntax error, unexpected ')', expecting '}'
+));}\n      |\n", 0, false);end
+ ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:21: syntax error, unexpected ')', expecting '}'
+));}\n      |\n", 0, false);end
+ ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:24: syntax error, unexpected ')', expecting '}'
+));}\n      |\n", 0, false);end
+ ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:25: syntax error, unexpected tIDENTIFIER, expecting '}'
+...mlout.push_text("      project.date\n    </p>\n  </div>\n</d...
+                              ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:25: syntax error, unexpected $undefined, expecting '}'
+...push_text("      project.date\n    </p>\n  </div>\n</div>\n"...
+                              ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:25: unknown regexp options - dv
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:25: syntax error, unexpected $undefined
+...ject.date\n    </p>\n  </div>\n</div>\n", -3, false);end
+                              ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:25: unterminated string meets end of file
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:25: syntax error, unexpected tSTRING_END, expecting tSTRING_CONTENT or tREGEXP_END or tSTRING_DBEG or tSTRING_DVAR
+Function body:           def _app_views_projects_index_html_haml___1078994251_2538972720(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "projects/index";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :encoding=>nil, :ugly=>false, :format=>:html5, :preserve=>["textarea", "pre", "code"], :escape_html=>true, :escape_attrs=>true, :attr_wrapper=>"'"});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h1>Listing projects</h1>\n", 0, false);
+
+ @projects.each do |project|
+_hamlout.push_text("<div class='project'>\n  <div class='image'>\n    <img#{_hamlout.adjust_tabs(2); 
+
+_hamlout.attributes({}, nil, :src => "images/projects/" + project.img; :width => "400px;")}>\n  </div>\n  <div class='content'>\n    <h2>\n      project.title\n    </h2>\n    <p>\n      project.description\n      <br>\n", 1, false);
+
+
+
+
+
+
+if project.link1.strip == ""
+_hamlout.push_text("      #{_hamlout.format_script_false_false_false_true_false_true_false(( link_to project.link1 + " ", project.link1url
+));}\n      |\n", 0, false);end
+if project.link2.strip == ""
+_hamlout.push_text("      #{_hamlout.format_script_false_false_false_true_false_true_false(( link_to project.link2 + " ", project.link2url
+));}\n      |\n", 0, false);end
+if project.link3.strip == ""
+_hamlout.push_text("      #{_hamlout.format_script_false_false_false_true_false_true_false(( link_to project.link3 + " ", project.link3url
+));}\n      |\n", 0, false);end
+if project.link4.strip == ""
+_hamlout.push_text("      #{_hamlout.format_script_false_false_false_true_false_true_false(( link_to project.link4 + " ", project.link4url
+));}\n      |\n", 0, false);end
+_hamlout.push_text("      project.date\n    </p>\n  </div>\n</div>\n", -3, false);end
+::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/helen/Code/homepage/app/views/projects/index.html.haml:25:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_view/template.rb:244:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_view/template.rb:232:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_view/template.rb:232:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_view/template.rb:144:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.2.8/lib/active_support/notifications.rb:125:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_view/template.rb:143:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.2.8/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:46:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_view/renderer/renderer.rb:17:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:88:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_controller/metal/rendering.rb:16:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.2.8/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.2.8/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.2.8/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/Users/helen/Code/homepage/app/controllers/projects_controller.rb:7:in `index'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/abstract_controller/base.rb:167:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:414:in `_run__1470342521__process_action__2097232126__callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:405:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:81:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.2.8/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `instrument'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.2.8/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/abstract_controller/base.rb:121:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:45:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_controller/metal.rb:203:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_controller/metal.rb:246:in `action'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Library/Ruby/Gems/1.8/gems/journey-1.0.4/lib/journey/router.rb:68:in `call'
+/Library/Ruby/Gems/1.8/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Library/Ruby/Gems/1.8/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:600:in `call'
+/Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/plugin/rack.rb:54:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+/Library/Ruby/Gems/1.8/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/cookies.rb:339:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.2.8/lib/active_record/query_cache.rb:64:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-3.2.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:405:in `_run__384468004__call__4__callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:405:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:81:in `send'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.2.8/lib/rails/rack/logger.rb:26:in `call_app'
+/Library/Ruby/Gems/1.8/gems/railties-3.2.8/lib/rails/rack/logger.rb:16:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/activesupport-3.2.8/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/static.rb:62:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.2.8/lib/rails/engine.rb:479:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.2.8/lib/rails/application.rb:223:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.2.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Library/Ruby/Gems/1.8/gems/rack-1.4.1/lib/rack/handler/webrick.rb:13:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.4.1/lib/rack/server.rb:265:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.2.8/lib/rails/commands/server.rb:70:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.2.8/lib/rails/commands.rb:55
+/Library/Ruby/Gems/1.8/gems/railties-3.2.8/lib/rails/commands.rb:50:in `tap'
+/Library/Ruby/Gems/1.8/gems/railties-3.2.8/lib/rails/commands.rb:50
+script/rails:6:in `require'
+script/rails:6
+  Rendered projects/index.html.haml within layouts/application (44.5ms)
+Completed 500 Internal Server Error in 47ms
+
+ActionView::Template::Error (compile error
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:6: syntax error, unexpected ';', expecting ')'
+...ages/projects/" + project.img; :width => "400px;")}>\n  </di...
+                              ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:6: syntax error, unexpected ')', expecting '}'
+...oject.img; :width => "400px;")}>\n  </div>\n  <div class='co...
+                              ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:6: unknown regexp option - h
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:6: syntax error, unexpected tINTEGER, expecting '}'
+...n      project.title\n    </h2>\n    <p>\n      project.desc...
+                              ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:6: syntax error, unexpected $undefined
+...ect.title\n    </h2>\n    <p>\n      project.description\n  ...
+                              ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:6: syntax error, unexpected $undefined, expecting '}'
+...p>\n      project.description\n      <br>\n", 1, false);
+                              ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:6: syntax error, unexpected $undefined
+...oject.description\n      <br>\n", 1, false);
+                              ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:15: syntax error, unexpected ')', expecting '}'
+));}\n      |\n", 0, false);end
+ ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:18: syntax error, unexpected ')', expecting '}'
+));}\n      |\n", 0, false);end
+ ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:21: syntax error, unexpected ')', expecting '}'
+));}\n      |\n", 0, false);end
+ ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:24: syntax error, unexpected ')', expecting '}'
+));}\n      |\n", 0, false);end
+ ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:25: syntax error, unexpected tIDENTIFIER, expecting '}'
+...mlout.push_text("      project.date\n    </p>\n  </div>\n</d...
+                              ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:25: syntax error, unexpected $undefined, expecting '}'
+...push_text("      project.date\n    </p>\n  </div>\n</div>\n"...
+                              ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:25: unknown regexp options - dv
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:25: syntax error, unexpected $undefined
+...ject.date\n    </p>\n  </div>\n</div>\n", -3, false);end
+                              ^
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:25: unterminated string meets end of file
+/Users/helen/Code/homepage/app/views/projects/index.html.haml:25: syntax error, unexpected tSTRING_END, expecting tSTRING_CONTENT or tREGEXP_END or tSTRING_DBEG or tSTRING_DVAR):
+    3: - @projects.each do |project|
+    4:   .project
+    5:     .image
+    6:       %img{:src => "images/projects/" + project.img; :width => "400px;"}
+    7:     .content
+    8:       %h2
+    9:         project.title
+  app/views/projects/index.html.haml:25:in `compile'
+  app/controllers/projects_controller.rb:7:in `index'
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.8ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 04:56:28 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:56:28 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 04:57:29 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:57:29 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 04:58:06 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (4.8ms)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:58:06 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 04:59:32 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 04:59:32 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 05:00:27 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 05:00:27 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 05:01:02 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.6ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 05:01:02 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 05:03:17 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 65ms
+
+ActionView::Template::Error (Invalid CSS after "  }": expected "}", was ","
+  (in /Users/helen/Code/homepage/app/assets/stylesheets/style.scss)):
+    2: %html
+    3:   %head
+    4:     %title Helen Weng
+    5:     = stylesheet_link_tag 'style'
+    6:     = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Norican'
+    7:     = csrf_meta_tags
+    8:   %body
+  app/assets/stylesheets/style.scss:90
+  app/views/layouts/application.html.haml:5:in `_app_views_layouts_application_html_haml__657667992_2540874980'
+  app/controllers/projects_controller.rb:7:in `index'
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.8ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 05:03:52 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.haml within layouts/application (0.3ms)
+Compiled style.css  (67ms)  (pid 83471)
+Completed 200 OK in 80ms (Views: 79.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 05:03:52 -0700 2012
+Served asset /style.css - 200 OK (6ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 05:04:17 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (0.3ms)
+Compiled style.css  (69ms)  (pid 83471)
+Completed 200 OK in 82ms (Views: 80.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 05:04:17 -0700 2012
+Served asset /style.css - 200 OK (5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 05:04:33 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.haml within layouts/application (0.5ms)
+Compiled style.css  (74ms)  (pid 83471)
+Completed 200 OK in 89ms (Views: 87.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 05:04:33 -0700 2012
+Served asset /style.css - 200 OK (5ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 05:05:00 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (0.6ms)
+Compiled style.css  (71ms)  (pid 83471)
+Completed 200 OK in 87ms (Views: 85.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 05:05:00 -0700 2012
+Served asset /style.css - 200 OK (4ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 05:05:18 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.haml within layouts/application (0.6ms)
+Compiled style.css  (72ms)  (pid 83471)
+Completed 200 OK in 88ms (Views: 86.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 05:05:18 -0700 2012
+Served asset /style.css - 200 OK (4ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 05:05:53 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (0.4ms)
+Compiled style.css  (70ms)  (pid 83471)
+Completed 200 OK in 82ms (Views: 80.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 05:05:54 -0700 2012
+Served asset /style.css - 200 OK (4ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 05:06:14 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.haml within layouts/application (0.4ms)
+Compiled style.css  (71ms)  (pid 83471)
+Completed 200 OK in 84ms (Views: 83.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 05:06:14 -0700 2012
+Served asset /style.css - 200 OK (3ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 05:06:34 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (0.4ms)
+Compiled style.css  (72ms)  (pid 83471)
+Completed 200 OK in 87ms (Views: 85.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 05:06:34 -0700 2012
+Served asset /style.css - 200 OK (3ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 05:07:43 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.haml within layouts/application (0.4ms)
+Compiled style.css  (69ms)  (pid 83471)
+Completed 200 OK in 82ms (Views: 80.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 05:07:43 -0700 2012
+Served asset /style.css - 200 OK (3ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 05:07:59 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (0.3ms)
+Compiled style.css  (69ms)  (pid 83471)
+Completed 200 OK in 81ms (Views: 80.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 05:07:59 -0700 2012
+Served asset /style.css - 200 OK (3ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 05:08:17 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.haml within layouts/application (0.4ms)
+Compiled style.css  (71ms)  (pid 83471)
+Completed 200 OK in 84ms (Views: 82.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 05:08:17 -0700 2012
+Served asset /style.css - 200 OK (3ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 05:08:19 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 05:08:19 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 05:11:07 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.haml within layouts/application (0.4ms)
+Compiled style.css  (72ms)  (pid 83471)
+Completed 200 OK in 86ms (Views: 84.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 05:11:08 -0700 2012
+Served asset /style.css - 200 OK (4ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 05:12:06 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 05:12:06 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 05:12:40 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.haml within layouts/application (0.6ms)
+Compiled style.css  (74ms)  (pid 83471)
+Completed 200 OK in 90ms (Views: 88.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 05:12:40 -0700 2012
+Served asset /style.css - 200 OK (4ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 05:13:19 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (0.5ms)
+Compiled style.css  (76ms)  (pid 83471)
+Completed 200 OK in 91ms (Views: 90.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 05:13:19 -0700 2012
+Served asset /style.css - 200 OK (3ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 05:14:59 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.haml within layouts/application (4.7ms)
+Compiled style.css  (32ms)  (pid 83471)
+Completed 200 OK in 92ms (Views: 91.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 05:15:00 -0700 2012
+Served asset /style.css - 200 OK (3ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 05:57:49 -0700 2012
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 55ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 05:57:50 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 05:57:50 -0700 2012
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 05:57:50 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 05:57:53 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 05:57:53 -0700 2012
+Served asset /style.css - 304 Not Modified (1ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at Thu Aug 30 05:58:40 -0700 2012
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.haml (7.1ms)
+  Rendered projects/new.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 05:58:40 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 05:59:57 -0700 2012
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 05:59:57 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 06:03:54 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 06:03:54 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started POST "/projects" for 127.0.0.1 at Thu Aug 30 06:12:54 -0700 2012
+Processing by ProjectsController#create as HTML
+  Parameters: {"commit"=>"Save", "project"=>{"link3url"=>"", "link4url"=>"", "title"=>"Bloodsuckers", "img"=>"bloodsuckers.jpg", "description"=>"This is a research project targeted at teaching young kids about mosquito avoidance and care in a fun, interactive way. I worked on this with Andrew Park, who, in addition to cooking up the details of the game with me, created the graphics. For the first stage of this project, we implemented 3 levels: swatting the mosquitos (with your cursor), preventing the mosquitos using mosquito netting, and putting lids on pots with standing water to prevent mosquitos from breeding. I did everything in Python using pygame.", "link1url"=>"images/projects/demos/bloodsuckers.avi", "date"=>"Jan 2011", "link2url"=>"", "link1"=>"Watch A Demo", "link2"=>"", "link3"=>"", "link4"=>""}, "authenticity_token"=>"W67atvXgSJ5/sIkaAAhb2V2+HJTrBgB+YpcgzxaJkWA=", "utf8"=>"✓"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("created_at", "date", "description", "img", "link1", "link1url", "link2", "link2url", "link3", "link3url", "link4", "link4url", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Thu, 30 Aug 2012 13:12:54 UTC +00:00], ["date", "Jan 2011"], ["description", "This is a research project targeted at teaching young kids about mosquito avoidance and care in a fun, interactive way. I worked on this with Andrew Park, who, in addition to cooking up the details of the game with me, created the graphics. For the first stage of this project, we implemented 3 levels: swatting the mosquitos (with your cursor), preventing the mosquitos using mosquito netting, and putting lids on pots with standing water to prevent mosquitos from breeding. I did everything in Python using pygame."], ["img", "bloodsuckers.jpg"], ["link1", "Watch A Demo"], ["link1url", "images/projects/demos/bloodsuckers.avi"], ["link2", ""], ["link2url", ""], ["link3", ""], ["link3url", ""], ["link4", ""], ["link4url", ""], ["title", "Bloodsuckers"], ["updated_at", Thu, 30 Aug 2012 13:12:54 UTC +00:00]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/projects/2
+Completed 302 Found in 6ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/projects/2" for 127.0.0.1 at Thu Aug 30 06:12:54 -0700 2012
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered projects/show.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 06:12:54 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 06:12:58 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 06:12:58 -0700 2012
+Served asset /style.css - 304 Not Modified (1ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 06:15:02 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 06:15:02 -0700 2012
+Served asset /style.css - 304 Not Modified (1ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 06:18:35 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (44.5ms)
+Compiled style.css  (32ms)  (pid 83471)
+Completed 200 OK in 89ms (Views: 88.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 06:18:35 -0700 2012
+Served asset /style.css - 200 OK (55ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 06:21:43 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 4.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 06:21:43 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 06:22:39 -0700 2012
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (0.2ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 06:22:39 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 06:22:41 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 06:22:41 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
