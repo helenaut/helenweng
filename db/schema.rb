@@ -10,21 +10,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120830110441) do
+ActiveRecord::Schema.define(:version => 20120830144800) do
 
   create_table "projects", :force => true do |t|
     t.string   "title"
-    t.string   "description"
+    t.text     "description"
     t.string   "img"
     t.string   "date"
     t.string   "link1"
-    t.string   "link1url"
+    t.text     "link1url"
     t.string   "link2"
-    t.string   "link2url"
+    t.text     "link2url"
     t.string   "link3"
-    t.string   "link3url"
+    t.text     "link3url"
     t.string   "link4"
-    t.string   "link4url"
+    t.text     "link4url"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end

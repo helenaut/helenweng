@@ -1570,3 +1570,199 @@ Completed 200 OK in 18ms (Views: 18.1ms | ActiveRecord: 0.0ms)
 
 Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 07:06:48 -0700 2012
 Served asset /style.css - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 07:45:11 -0700 2012
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 07:45:12 -0700 2012
+Served asset /style.css - 304 Not Modified (2ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 07:45:13 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 32ms (Views: 10.3ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 07:45:13 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateProjects (20120830110441)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "projects" ("id" serial primary key, "title" character varying(255), "description" character varying(255), "img" character varying(255), "date" character varying(255), "link1" character varying(255), "link1url" character varying(255), "link2" character varying(255), "link2url" character varying(255), "link3" character varying(255), "link3url" character varying(255), "link4" character varying(255), "link4url" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+PG::Error: ERROR:  relation "projects" already exists
+: CREATE TABLE "projects" ("id" serial primary key, "title" character varying(255), "description" character varying(255), "img" character varying(255), "date" character varying(255), "link1" character varying(255), "link1url" character varying(255), "link2" character varying(255), "link2url" character varying(255), "link3" character varying(255), "link3url" character varying(255), "link4" character varying(255), "link4url" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (5049.5ms)[0m  [1mDROP DATABASE IF EXISTS "helen_development"[0m
+PG::Error: ERROR:  database "helen_development" is being accessed by other users
+DETAIL:  There are 1 other session(s) using the database.
+: DROP DATABASE IF EXISTS "helen_development"
+  [1m[35m (4.0ms)[0m  DROP TABLE "projects"
+  [1m[36m (4.7ms)[0m  [1mCREATE TABLE "projects" ("id" serial primary key, "title" character varying(255), "description" character varying(255), "img" character varying(255), "date" character varying(255), "link1" character varying(255), "link1url" character varying(255), "link2" character varying(255), "link2url" character varying(255), "link3" character varying(255), "link3url" character varying(255), "link4" character varying(255), "link4url" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120830110441')[0m
+  [1m[35m (0.4ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateProjects (20120830110441)
+Migrating to ChangeStringToText (20120830144800)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "projects" ALTER COLUMN "description" TYPE text[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "projects" ALTER COLUMN "link1url" TYPE text
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "projects" ALTER COLUMN "link2url" TYPE text[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "projects" ALTER COLUMN "link3url" TYPE text
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "projects" ALTER COLUMN "link4url" TYPE text[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120830144800')
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36mPK and serial sequence (2.2ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"projects"'::regclass
+[0m
+  [1m[35m (1.4ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'projects'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 07:53:13 -0700 2012
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 07:53:13 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 07:53:23 -0700 2012
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 07:53:23 -0700 2012
+Served asset /style.css - 304 Not Modified (2ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 07:53:25 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects" [0m
+  Rendered projects/index.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 26ms (Views: 9.2ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 07:53:25 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects/new" for 127.0.0.1 at Thu Aug 30 07:53:28 -0700 2012
+Processing by ProjectsController#new as HTML
+  Rendered projects/_form.html.haml (58.8ms)
+  Rendered projects/new.html.haml within layouts/application (63.6ms)
+Completed 200 OK in 77ms (Views: 67.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 07:53:28 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started POST "/projects" for 127.0.0.1 at Thu Aug 30 07:53:48 -0700 2012
+Processing by ProjectsController#create as HTML
+  Parameters: {"commit"=>"Save", "utf8"=>"✓", "authenticity_token"=>"W67atvXgSJ5/sIkaAAhb2V2+HJTrBgB+YpcgzxaJkWA=", "project"=>{"link1url"=>"This is a research project targeted at teaching young kids about mosquito avoidance and care in a fun, interactive way. I worked on this with Andrew Park, who, in addition to cooking up the details of the game with me, created the graphics. For the first stage of this project, we implemented 3 levels: swatting the mosquitos (with your cursor), preventing the mosquitos using mosquito netting, and putting lids on pots with standing water to prevent mosquitos from breeding. I did everything in Python using pygame.", "link3url"=>"", "link1"=>"sdf", "link2"=>"", "link3"=>"", "link4"=>"", "img"=>"sdf", "link4url"=>"", "title"=>"sdf", "date"=>"asg", "description"=>"This is a research project targeted at teaching young kids about mosquito avoidance and care in a fun, interactive way. I worked on this with Andrew Park, who, in addition to cooking up the details of the game with me, created the graphics. For the first stage of this project, we implemented 3 levels: swatting the mosquitos (with your cursor), preventing the mosquitos using mosquito netting, and putting lids on pots with standing water to prevent mosquitos from breeding. I did everything in Python using pygame.", "link2url"=>""}}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (6.6ms)[0m  [1mINSERT INTO "projects" ("created_at", "date", "description", "img", "link1", "link1url", "link2", "link2url", "link3", "link3url", "link4", "link4url", "title", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14) RETURNING "id"[0m  [["created_at", Thu, 30 Aug 2012 14:53:48 UTC +00:00], ["date", "asg"], ["description", "This is a research project targeted at teaching young kids about mosquito avoidance and care in a fun, interactive way. I worked on this with Andrew Park, who, in addition to cooking up the details of the game with me, created the graphics. For the first stage of this project, we implemented 3 levels: swatting the mosquitos (with your cursor), preventing the mosquitos using mosquito netting, and putting lids on pots with standing water to prevent mosquitos from breeding. I did everything in Python using pygame."], ["img", "sdf"], ["link1", "sdf"], ["link1url", "This is a research project targeted at teaching young kids about mosquito avoidance and care in a fun, interactive way. I worked on this with Andrew Park, who, in addition to cooking up the details of the game with me, created the graphics. For the first stage of this project, we implemented 3 levels: swatting the mosquitos (with your cursor), preventing the mosquitos using mosquito netting, and putting lids on pots with standing water to prevent mosquitos from breeding. I did everything in Python using pygame."], ["link2", ""], ["link2url", ""], ["link3", ""], ["link3url", ""], ["link4", ""], ["link4url", ""], ["title", "sdf"], ["updated_at", Thu, 30 Aug 2012 14:53:48 UTC +00:00]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/projects/1
+Completed 302 Found in 12ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/projects/1" for 127.0.0.1 at Thu Aug 30 07:53:48 -0700 2012
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered projects/show.html.haml within layouts/application (7.9ms)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 07:53:48 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/projects" for 127.0.0.1 at Thu Aug 30 07:53:53 -0700 2012
+Processing by ProjectsController#index as HTML
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects" 
+  Rendered projects/index.html.haml within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 07:53:53 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/images/projects/sdf" for 127.0.0.1 at Thu Aug 30 07:53:53 -0700 2012
+
+ActionController::RoutingError (No route matches [GET] "/images/projects/sdf"):
+  actionpack (3.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.8) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.8) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.8) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.8) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.8) lib/rails/engine.rb:479:in `call'
+  railties (3.2.8) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.8) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.8) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.8) lib/rails/commands.rb:55
+  railties (3.2.8) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.8) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
