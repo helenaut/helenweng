@@ -2328,3 +2328,24 @@ ActionController::RoutingError (No route matches [GET] "/images/projects/sdf"):
 
 
   Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 21:23:37 -0700 2012
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 23ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 21:23:37 -0700 2012
+Served asset /style.css - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Aug 30 21:23:39 -0700 2012
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at Thu Aug 30 21:23:39 -0700 2012
+Served asset /style.css - 304 Not Modified (0ms)

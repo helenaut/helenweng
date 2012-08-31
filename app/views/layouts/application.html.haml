@@ -22,7 +22,7 @@
         .navitem
           =link_to "GitHub", "https://github.com/helenaut", :target=>"_blank"
         .navitem.last
-          =link_to "Resume", "http://google.com", :target=>"_blank"
+          =link_to "Resume", "resume.pdf", :target=>"_blank"
       #flash
         - [:notice, :error, :success].each do |key|
           - unless flash[key].blank?
